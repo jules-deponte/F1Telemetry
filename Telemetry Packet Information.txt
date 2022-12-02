@@ -1,0 +1,7 @@
+
+F1 2020
+https://f1-2020-telemetry.readthedocs.io/en/latest/telemetry-specification.html
+
+
+F1 2021
+https://github.com/raweceek-temeletry/f1-2021-udp#overview  

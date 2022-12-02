@@ -1,7 +1,7 @@
 import socket
 import pandas as pd
 
-UDP_IP = "192.168.1.59"
+UDP_IP = "127.0.0.1"
 UDP_PORT = 20777
 
 sock = socket.socket(
@@ -18,7 +18,7 @@ i = 0
 
 while True:
     data, addr = sock.recvfrom(1464) # buffer size is 1024 bytes
-    # print("received message: %s" % data)
+    print("received message: %s" % data)
 
 
     i = i + 1
@@ -27,6 +27,6 @@ while True:
 
     df = df.append(d, ignore_index=True)
 
-    if i % 10 == 0:
+    if i % 1000 == 0:
         print(df)
         df.to_csv(r'C:\Users\jules\OneDrive\F1 2021 Telemetry\Python Script\data.csv')
